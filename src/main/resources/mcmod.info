@@ -1,0 +1,17 @@
+[
+{
+  "modid": "gravitycraft",
+  "name": "GravityCraft",
+  "description": "Adds gravitational rotation, strength, and layered infinite world height.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["Ivorius", "Ieuan", "diesieben07", "???"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [],
+  "required-after": ["ivtoolkit@[1.0.1,)"]
+}
+]
