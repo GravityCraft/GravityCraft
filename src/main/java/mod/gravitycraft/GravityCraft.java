@@ -1,6 +1,7 @@
 package mod.gravitycraft;
 
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
@@ -17,11 +18,16 @@ public class GravityCraft
     @Mod.Instance(value = "gravitycraft")
     public static GravityCraft instance;
 
+    @SidedProxy(clientSide = "mod.gravitycraft.client.GCClientProxy", serverSide = "mod.gravitycraft.server.GCServerProxy")
+    public static GCProxy proxy;
+
     public static Logger logger;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+
+        GCRegistryHandler.preInit();
     }
 }
