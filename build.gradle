@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "0.1"
+group= "mod.gravitycraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "GravityCraft"
 
 minecraft {
     version = "1.7.10-10.13.2.1231"
@@ -56,3 +56,6 @@ runClient {
 runServer {
     jvmArgs '-Dfml.coreMods.load=ivorius.ivtoolkit.IvToolkitLoadingPlugin'
 }
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
